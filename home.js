@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const bbfn = require('./functions.js');
+const port = process.env.PORT || 5000;
 
 // Use Passport with OpenId Connect strategy to
 // Authenticate users with IBM Cloud Identity Connect
@@ -190,6 +191,6 @@ app.post("/new-account-success", (req,res) => {
 
 
 
-app.listen(5000, function(){
+app.listen(port, function(){
 	console.log('Listening on port 5000');
 });

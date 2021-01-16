@@ -4,7 +4,8 @@
   "description": "Bank app using express js and mustache(hsb) template",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+   "start": "nodemon home.js"
   },
   "author": "Saloni Rathi",
   "license": "ISC",
