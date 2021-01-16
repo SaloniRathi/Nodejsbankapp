@@ -1,0 +1,100 @@
+
+@font-face {
+    font-family: 'helvetica';
+    src: url('fonts/helveticaneue-roman-webfont.eot');
+    src: url('fonts/helveticaneue-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticaneue-roman-webfont.woff') format('woff'),
+         url('fonts/helveticaneue-roman-webfont.ttf') format('truetype'),
+         url('fonts/helveticaneue-roman-webfont.svg#helvetica_neueregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+	color: #fff;
+	font-family: 'helvetica';
+	font-weight: 400;
+}
+.wrapper{
+	max-width: 1212px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.header{
+	clear: both;
+	overflow: hidden;
+	padding: 52px 0;
+}
+.logo{
+	float: left;
+}
+.header-right{
+	float: right;
+}
+.header-right{
+	float: right;
+	line-height: 40px;
+}
+.header-right a{
+	display: inline-block;
+	height: 40px;
+	width: 88px;
+	border-radius: 5px;
+	background-color: #376C62;
+	box-shadow: 2px 4px 4px 0 rgba(0,0,0,0.05);
+	-webkit-box-shadow: 2px 4px 4px 0 rgba(0,0,0,0.05);
+	
+	color: #FFFFFF;
+	font-family: 'helvetica';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 40px;
+	margin-left: 18px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.refresh{
+	width: 30px;
+}
+
+.table-section{
+	margin-bottom: 60px;
+}
+.table-section table{
+	border: 1px solid #6B696C;	
+}
+.table-section table tr{
+	
+}
+.table-section table tr th{
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 29px;
+	text-align: left;
+	padding: 0 20px;
+	border: 0px solid #09070A;	
+	background-color: #1E1B1F;
+	line-height: 51px;
+	border: 0;
+	border-bottom: 1px solid #6B696C;
+}
+.table-section table tr td{
+	color: #368C7C;
+	font-size: 14px;
+	line-height: 29px;
+	padding: 0 20px;
+	line-height: 48px;
+	border: 0;
+	border-bottom: 1px solid #6B696C;
+	background-color: #000;
+}
+.table-section table tr:last-child td{
+	border-bottom: 0px;
+}
+
+
+
+
+

@@ -1,0 +1,269 @@
+/*=============================================================
+[Fontface]
+================================================================*/
+@font-face {
+    font-family: 'helvetica';
+    src: url('./fonts/helveticaneue-roman-webfont.eot');
+    src: url('./fonts/helveticaneue-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/helveticaneue-roman-webfont.woff') format('woff'),
+         url('./fonts/helveticaneue-roman-webfont.ttf') format('truetype'),
+         url('./fonts/helveticaneue-roman-webfont.svg#helvetica_neueregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helvetica';
+    src: url('./fonts/helveticaneue-light-webfont.eot');
+    src: url('./fonts/helveticaneue-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/helveticaneue-light-webfont.woff') format('woff'),
+         url('./fonts/helveticaneue-light-webfont.ttf') format('truetype'),
+         url('./fonts/helveticaneue-light-webfont.svg#helvetica_neueregular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helvetica';
+    src: url('./fonts/helveticaneue-bold-webfont.eot');
+    src: url('./fonts/helveticaneue-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/helveticaneue-bold-webfont.woff') format('woff'),
+         url('./fonts/helveticaneue-bold-webfont.ttf') format('truetype'),
+         url('./fonts/helveticaneue-bold-webfont.svg#helvetica_neuebold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+/*=============================================================*/
+body {
+	color: #fff;
+	font-family: 'helvetica';
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	background: #223647; 
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+.dcc_container {
+	max-width: 1300px;
+	padding: 50px 0;
+	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px){
+	.dcc_container {
+		display: flex;
+		flex-direction: column;
+	}
+}
+.dcc_container * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.dcc_container .left_sidebar {
+	width: 310px;
+	float: left;
+	margin-left: 20px;
+}
+
+@media screen and (max-width: 768px){
+	.dcc_container .left_sidebar {
+		margin: auto;
+	}
+}
+
+.dcc_container .left_sidebar .ibm-logo {
+	width: 163px;
+	margin-bottom: 15px;
+}
+.dcc_container .left_sidebar .logo_text {
+	font-size: 26px;
+	line-height: 32px;
+	color: #fff;
+}
+
+@media screen and (min-width: 768.1px){
+	.dcc_container .right_content {
+		width: calc(100% - 600px);
+		float: left;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.dcc_container .right_content{
+		margin-top: 50px;
+	}
+}
+
+
+
+.dcc_container .right_content .cc_content {
+	padding: 20px;
+	background-color: #1e303f;
+	margin-bottom: 34px;
+}
+
+.dcc_container .right_content .cc_content .dcc_type {
+	position: relative;
+	width: 100%;
+	background: #365169 url(./images/dropdown-arrow.png) no-repeat right center;
+	border: none;
+	color: #fff;
+	font-size: 18px;
+	line-height: 22px;
+	padding: 19px 45px 19px 12px;
+	outline: none;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-o-appearance:none;
+}
+
+.custom-select {
+	position: relative;
+	font-family: Arial;
+  }
+  
+  .custom-select select {
+	display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+	background-color: DodgerBlue;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+	position: absolute;
+	content: "";
+	top: 14px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+	border-color: transparent transparent #fff transparent;
+	top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+	color: #ffffff;
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+	cursor: pointer;
+	user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+	position: absolute;
+	background-color: DodgerBlue;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+	display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+	background-color: rgba(0, 0, 0, 0.1);
+  }
+
+.dcc_container .right_content .cc_content .cc_cards {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 6px 0;
+	margin: 0 -6px;
+}
+.dcc_container .right_content .cc_content .cc_cards .cc_card {
+	text-decoration: none;
+	flex: 1 0 20%;
+	background-color: #253b4d;
+	margin: 6px;
+	padding: 12px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #8FA6BF;
+	min-height: 80px;
+}
+.dcc_container .right_content .cc_content .cc_cards .cc_card:hover {
+	color: #fff;
+}
+
+.cc_customer_info {
+	margin: 7px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #8FA6BF;
+}
+
+.cc_customer_info a {
+	margin-top: 25px;
+	text-decoration: none;
+	color: #8FA6BF;
+	display: inline-block;
+	margin-right: 40px;
+}
+.cc_customer_info a:hover {
+	text-decoration: underline;
+}
+
+.csid {
+	display: contents;
+}
+
+.cc_customer_info img {
+	margin-right: 6px;
+}
+
+.contact-trusteer a{
+	text-decoration: none;
+	color: #8FA6BF;
+	margin-left: 30px;
+}
+.contact-trusteer small{
+	text-decoration: none;
+	color: #8FA6BF;
+	margin-left: 35px;
+}
+
+.contact-trusteer-error{
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-trusteer-error a{
+	text-decoration: none;
+	color: #8FA6BF;
+	font-size: xx-large;
+	
+}
+.contact-trusteer-error small{
+	text-decoration: none;
+	color: #8FA6BF;
+	font-size: medium;
+}
+
+/*===========================================================
+[Clear]
+============================================================*/
+.dcc_container:after {
+	clear: both;
+	content: "";
+	display: table;
+}
